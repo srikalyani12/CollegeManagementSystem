@@ -1,0 +1,32 @@
+INSTALL & RUN (Linux / macOS / Windows WSL)
+1) Install Node.js (v18+): https://nodejs.org/
+2) Install MongoDB and run mongod locally, or use MongoDB Atlas.
+   - Local: https://www.mongodb.com/docs/manual/installation/
+   - Atlas: create cluster, get connection string.
+3) Backend:
+   cd backend
+   cp .env.example .env   # then edit .env to set MONGO_URI and JWT_SECRET
+   npm install
+   npm run dev
+   Server runs on http://localhost:5000
+4) Frontend:
+   cd frontend
+   npm install
+   npm start
+   Frontend runs on http://localhost:3000
+5) Use the UI to register/login and manage students.
+
+GIT & GitHub (push project)
+1) In project root:
+   git init
+   git add .
+   git commit -m "Initial commit"
+2) Create a repository on GitHub (via website). Copy repo URL.
+3) Add remote and push:
+   git remote add origin <your-repo-url>
+   git branch -M main
+   git push -u origin main
+
+VS Code
+- Open the project folder in VS Code: File -> Open Folder -> /path/to/project_starter
+- Recommended extensions: ESLint, Prettier, GitLens, MongoDB for VS Code.
